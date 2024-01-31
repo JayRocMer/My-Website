@@ -1,0 +1,70 @@
+:root {
+    --white-color: rgb(249, 248, 248);
+    --pink-color: rgb(233, 53, 233);
+}
+
+body {
+    background-color: #000000;
+}
+
+body, ul, *[href]{
+    color: var(--pink-color);
+}
+
+ul{
+    font-size: medium;
+}
+
+h2 {
+    color:#00ffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+.second-text {
+    color: #1bb7e2;
+}
+
+h3 {
+    color: #ff1493;
+}
+
+p {
+    font-size: 100%;
+}
+
+img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+#hint{
+    color: #00ffff;
+}
+
+#how-to-play {
+    clear: left;
+}
+
+#minecraft_title{
+    color: rgb(220, 20, 60);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+
+.first-text {
+    color: rgb(31, 251, 82);
+}
+
+main {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+}
+
+#things-to-do>ul, #sand>ul, footer {
+    color: var(--white-color)
+}
