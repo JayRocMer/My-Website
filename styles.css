@@ -4,14 +4,55 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
+    background: rgb(0, 0, 0) url( "../images/dark_image.jpg");
+    background-attachment: scroll;
+    background-size: cover;
 }
 
-body, ul, *[href]{
+img {
+    float: left;
+}
+
+#things-to-do {
+    width: 480px;
+    float: left;
+    padding-left: 2.5%;
+}
+
+#purposes {
+    width: 490px;
+    float: left;
+    padding-right: 2.5%;
+}
+
+#mobs {
+    width: 470px;
+    float: right;
+    padding-right: 3%;
+}
+
+br {
+    clear: left;
+}
+
+.box {
+    color: rgb(240, 255, 255);
+    text-align: center;
+    margin: 5px auto;
+    padding: 5px 2em;
+    border: thick outset var(--pink-color);
+    border-radius: 15px;
+}
+
+article {
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 2px solid rgb(255, 255, 255);
+}
+
+body ul {
     color: var(--pink-color);
-}
-
-ul{
     font-size: medium;
 }
 
@@ -25,46 +66,48 @@ h2 {
 
 .second-text {
     color: #1bb7e2;
-}
-
-h3 {
-    color: #ff1493;
+    text-align: center;
 }
 
 p {
-    font-size: 100%;
+    font-size: 110%;
 }
 
-img {
-    float: left;
-    margin-right: 1em;
-    margin-bottom: 1em;
+a:link, *[href] { 
+    color: var(--pink-color);
 }
 
-#hint{
-    color: #00ffff;
-}
-
-#how-to-play {
-    clear: left;
+a:hover, a:focus {
+    color: rgb(255, 255, 0);
 }
 
 #minecraft_title{
-    color: rgb(220, 20, 60);
+    text-align: center;
+    color: var(--pink-color);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-variant: small-caps;
 }
 
+#hint {
+    text-align: center;
+}
+
 .first-text {
+    text-align: center;
     color: rgb(31, 251, 82);
 }
 
 main {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
+    line-height: 1.4em;
 }
 
-#things-to-do>ul, #sand>ul, footer {
+#interested {
+    text-align: center;
+}
+
+h3, #hint, footer {
     color: var(--white-color)
 }

@@ -1,0 +1,59 @@
+:root {
+    --white-color: rgb(249, 248, 248);
+    --pink-color: rgb(233, 53, 233);
+}
+
+body {
+    background-image: linear-gradient(45deg, blue 0%, black 50%, green 100%);
+    border: 3px solid black;
+}
+
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 200;
+}
+
+a:link,
+*[href] {
+    color: var(--white-color);
+}
+
+a:hover, a:focus {
+    color: var(--pink-color);
+}
+
+h1 {
+    text-align: center;
+    color: var(--white-color);
+}
+
+#welcome {
+    width: 480px;
+    float: left;
+    padding-left: 2.5%;
+    height: fit-content;
+}
+
+#shelter {
+    width: 490px;
+    float: left;
+    padding-right: 2.5%;
+    height: fit-content;
+}
+
+#venture {
+    width: 470px;
+    float: right;
+    padding-right: 3%;
+    height: fit-content;
+}
+
+article {
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 5px dotted rgb(0, 128, 0);
+    font-size: small;
+    line-height: 150%;
+}
