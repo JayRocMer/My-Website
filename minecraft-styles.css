@@ -8,6 +8,36 @@ body {
     border: 3px solid black;
 }
 
+#nav_menu {
+    padding-bottom: 2em;
+    margin: auto;
+    width: 550px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    align-items: center;
+    width: 550px;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: 0 1.5em;
+}
+
+#nav_menu ul li a {
+    font-weight: bold;
+    color: var(--pink-color);
+}
+
+#nav_menu ul li a:hover {
+    color: var(--white-color);
+}
+
 main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--white-color);
