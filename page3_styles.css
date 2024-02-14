@@ -5,21 +5,22 @@
 
 body {
     background-color: rgb(0, 0, 0);
-    background: rgb(0, 0, 0) url("../images/dark_image.jpg");
+    background: rgb(0, 0, 0) url("images/dark_image.jpg");
     background-attachment: scroll;
     background-size: cover;
 }
 
+/* I haven't figured out how to match the same text size and font to the first two pages yet */ 
 #nav_menu {
     padding-bottom: 0.5em;
     margin: auto;
-    width: 550px;
+    width: 100%;
 }
 
 #nav_menu ul {
     list-style-type: none;
     align-items: center;
-    width: 550px;
+    width: 100%;
     padding: 1em 0;
     text-align: center;
     border-top: 2px solid rgb(255, 255, 255);

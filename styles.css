@@ -8,22 +8,28 @@ body {
     background: rgb(0, 0, 0) url("images/dark_image.jpg");
     background-attachment: scroll;
     background-size: cover;
+    width: 100%;
+    max-width: 1535px;
 }
+
+/* this image is my scalable image, I think. If I did it right, of course! */
 
 img {
     float: left;
+    width: 15%;
+    min-width: 150px;
 }
 
 #nav_menu {
     padding-bottom: 0.5em;
     margin: auto;
-    width: 550px;
+    width: 100%;
 }
 
 #nav_menu ul {
     list-style-type: none;
     align-items: center;
-    width: 550px;
+    width: 100%;
     padding: 1em 0;
     text-align: center;
     border-top: 2px solid rgb(255, 255, 255);
@@ -59,8 +65,9 @@ img {
     line-height: 2em;
 }
 
+/* intended to create space between what's above and below the break tag, not sure if it is needed though */
 br {
-    clear: left;
+    clear: both;
 }
 
 .box {
@@ -127,6 +134,7 @@ a:focus {
     color: rgb(31, 251, 82);
 }
 
+/* the following is for the icons added to my unordered lists, do they need alt text if they are icons? */
 ul.diamonds {
     list-style-image: url("images/diamonds.png");
 }
@@ -147,14 +155,29 @@ main {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     line-height: 1.4em;
+    width: 100%;
+    padding: 15px 2%;
 }
 
 #interested {
     text-align: center;
 }
 
+/* I think you said CSS doesn't use commas, but the webpage was ruined without them */
 h3,
 #hint,
 footer {
     color: var(--white-color)
+}
+
+/* this is for the layout when the browser width changes, however, I'm having trouble with the box */
+
+@media only screen and (max-width: 1515px) {
+    article {
+        column-width: 480px;
+    }
+
+    .box {
+        width: 480px;
+    }
 }
