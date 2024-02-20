@@ -3,6 +3,8 @@
     --pink-color: rgb(233, 53, 233);
 }
 
+/* Main */
+
 body {
     background-color: rgb(0, 0, 0);
     background: rgb(0, 0, 0) url("images/dark_image.jpg");
@@ -12,24 +14,39 @@ body {
     max-width: 1535px;
 }
 
-/* this image is my scalable image, I think. If I did it right, of course! */
+body ul {
+    color: var(--pink-color);
+    font-size: medium;
+}
+
+main {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    line-height: 1.4em;
+    width: 90%;
+    padding: 15px 2%;
+}
+
+/* Minecraft Image */
 
 img {
-    float: left;
-    width: 15%;
-    min-width: 150px;
+    min-width: 200px;
+    align-self: center;
+    margin: 1em;
 }
+
+/* Nav Section */
 
 #nav_menu {
     padding-bottom: 0.5em;
     margin: auto;
-    width: 100%;
 }
 
 #nav_menu ul {
     list-style-type: none;
     align-items: center;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
     padding: 1em 0;
     text-align: center;
     border-top: 2px solid rgb(255, 255, 255);
@@ -39,42 +56,44 @@ img {
 #nav_menu ul li {
     display: inline;
     padding: 0 1.5em;
+    flex-basis: 33%;
 }
 
 #nav_menu ul li a:hover {
     color: var(--white-color);
 }
 
+/* Within the article */
+
+#contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
 #things-to-do {
-    width: 480px;
-    float: left;
-    padding-left: 2.5%;
-    line-height: 2em;
+    flex-basis: 30%;
 }
 
 #purposes {
-    width: 490px;
-    float: left;
-    padding-right: 2.5%;
+    flex-basis: 30%;
 }
 
 #mobs {
-    width: 470px;
-    float: right;
-    padding-right: 3%;
-    line-height: 2em;
+   flex-basis: 30%;
 }
 
-/* intended to create space between what's above and below the break tag, not sure if it is needed though */
 br {
     clear: both;
 }
 
+/* Mid-page box */
 .box {
     color: rgb(240, 255, 255);
-    text-align: center;
-    margin: 5px auto;
-    padding: 5px 2em;
+    display: flex;
+    text-align: auto;
+    margin: auto;
+    padding: 5px 3em;
     border: thick outset var(--pink-color);
     border-radius: 15px;
 }
@@ -83,11 +102,6 @@ article {
     column-count: 3;
     column-gap: 35px;
     column-rule: 2px solid rgb(255, 255, 255);
-}
-
-body ul {
-    color: var(--pink-color);
-    font-size: medium;
 }
 
 h2 {
@@ -117,6 +131,14 @@ a:focus {
     color: rgb(249, 248, 248);
 }
 
+/* Title */
+
+#titles {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 #minecraft_title {
     text-align: center;
     color: var(--pink-color);
@@ -124,6 +146,7 @@ a:focus {
     font-weight: 700;
     font-variant: small-caps;
 }
+
 
 #hint {
     text-align: center;
@@ -134,7 +157,7 @@ a:focus {
     color: rgb(31, 251, 82);
 }
 
-/* the following is for the icons added to my unordered lists, do they need alt text if they are icons? */
+/* Body box icons */
 ul.diamonds {
     list-style-image: url("images/diamonds.png");
 }
@@ -151,33 +174,37 @@ ul.pickaxe {
     list-style-image: url("images/pickaxe.png");
 }
 
-main {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 300;
-    line-height: 1.4em;
-    width: 100%;
-    padding: 15px 2%;
-}
-
 #interested {
     text-align: center;
 }
 
-/* I think you said CSS doesn't use commas, but the webpage was ruined without them */
 h3,
 #hint,
 footer {
     color: var(--white-color)
 }
 
-/* this is for the layout when the browser width changes, however, I'm having trouble with the box */
-
-@media only screen and (max-width: 1515px) {
+/* Media queries */
+@media only screen and (max-width: 630px) {
     article {
         column-width: 480px;
     }
 
+    #nav_menu ul {
+        flex-direction: column;
+    }
+
     .box {
-        width: 480px;
+        width: 100%;
+        min-width: 480px;
+    }
+
+    #contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #titles {
+        flex-direction: column;
     }
 }

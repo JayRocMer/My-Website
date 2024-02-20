@@ -91,3 +91,18 @@ article {
     padding-right: 3%;
     height: fit-content;
 }
+
+/* Media queries */
+@media only screen and (max-width: 630px) {
+    article {
+        column-width: 480px;
+    }
+
+    #nav_menu ul {
+        flex-direction: column;
+    }
+
+    #titles {
+        flex-direction: column;
+    }
+}
