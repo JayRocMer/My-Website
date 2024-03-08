@@ -3,22 +3,11 @@
     --pink-color: rgb(233, 53, 233);
 }
 
-/* page two background gradient */
-body {
-    background-image: linear-gradient(45deg, blue 0%, black 50%, green 100%);
-    border: 3px solid black;
-}
-
-#nav_menu {
-    padding-bottom: 0.5em;
-    margin: auto;
-    width: 100%;
-}
-
 #nav_menu ul {
     list-style-type: none;
     align-items: center;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
     padding: 1em 0;
     text-align: center;
     border-top: 2px solid rgb(255, 255, 255);
@@ -28,81 +17,59 @@ body {
 #nav_menu ul li {
     display: inline;
     padding: 0 1.5em;
+    flex-basis: 33%;
 }
 
 #nav_menu ul li a {
-    padding: 0.5em 0 .5em 1.5em;
-    text-decoration: none;
     font-weight: bold;
-    color: var(--pink-color)
-}
-
-#nav_menu ul li a:hover {
-    color: var(--white-color);
-}
-
-main {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--white-color);
-    font-style: normal;
-    font-weight: 200;
-}
-
-a:link,
-*[href] {
-    color: var(--white-color);
-}
-
-a:hover, a:focus {
     color: var(--pink-color);
 }
 
-h1 {
-    text-align: center;
-    color: var(--white-color);
+#nav_menu ul li a.current {
+    text-decoration: none;
 }
 
-article {
-    column-count: 3;
-    column-gap: 50px;
-    column-rule: 5px dotted rgb(0, 128, 0);
-    font-size: small;
-    line-height: 175%;
+br {
+    clear: both;
 }
 
-/* intended for the text inside the article */
-#welcome {
-    width: 480px;
-    float: left;
-    padding-left: 2.5%;
-    height: fit-content;
+.cabin {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+body {
+    background-color: rgb(0, 0, 0);
+    background: rgb(0, 0, 0) url("images/dark_image.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    max-width: 100%;
+    color: var(--pink-color);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 80px 1fr 1fr 60px;
+    grid-gap: 16px;
+    grid-template-areas:
+    "head head head"
+    "sec1 sec2 sec3"
+    "foot foot foot";
 }
 
 #shelter {
-    width: 490px;
-    float: left;
-    padding-right: 2.5%;
-    height: fit-content;
+    grid-area: sec2;
 }
 
 #venture {
-    width: 470px;
-    float: right;
-    padding-right: 3%;
-    height: fit-content;
+    grid-area: sec3;
 }
 
-/* Media queries */
-@media only screen and (max-width: 630px) {
-    article {
-        column-width: 480px;
-    }
-
-    #nav_menu ul {
-        flex-direction: column;
-    }
-
-    #titles {
-        flex-direction: column;
-    }
+#footer {
+    grid-area: foot;
 }

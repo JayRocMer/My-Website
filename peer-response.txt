@@ -1,0 +1,11 @@
+
+
+The home page looks good and easy to read. the color shceme and the background both pop. The only thing that is that the nav bar items 
+redirect to all new tabs. i dont know if that is on purpose or not. The other pages seem good just need to add more pictures and thing 
+of that nature.
+
+Hi Jasmin! I really like the contrast between the purple text and black/grey background and how it resembles the nether portals in Minecraft. 
+The home page does a very good job of selling the website, as well as having a good amount of information “above the fold”.
+
+However, I do think the tutorial page could be improved. when you shrink the tab it causes the text to overlap and become unreadable, and the 
+background is different from the other pages on the site.
