@@ -18,11 +18,13 @@ body ul {
 }
 
 main {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 300;
-    line-height: 1.4em;
-    width: 90%;
-    padding: 15px 2%;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    margin: 1em;
 }
 
 #titles {

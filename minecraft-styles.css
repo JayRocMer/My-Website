@@ -49,11 +49,13 @@ body ul {
 }
 
 main {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 300;
-    line-height: 1.4em;
-    width: 90%;
-    padding: 15px 2%;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    line-height: 3em;
 }
 
 h1 {
@@ -77,10 +79,10 @@ main {
     grid-gap: 16px;
     padding: 1em;
     grid-template-areas:
-    "head head head"
-    "sec1 sec2 sec3"
-    "sec1 sec2 sec3"
-    "foot foot foot";
+        "head head head"
+        "sec1 sec2 sec3"
+        "sec1 sec2 sec3"
+        "foot foot foot";
 }
 
 #header {

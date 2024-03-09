@@ -19,11 +19,13 @@ body ul {
 }
 
 main {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 300;
-    line-height: 1.4em;
-    width: 90%;
-    padding: 15px 2%;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    margin: 1em;
 }
 
 /* Minecraft Image */
@@ -69,7 +71,7 @@ img {
 #contents {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 #things-to-do {
@@ -81,7 +83,7 @@ img {
 }
 
 #mobs {
-   flex-basis: 30%;
+    flex-basis: 30%;
 }
 
 br {
@@ -92,11 +94,15 @@ br {
 .box {
     color: rgb(240, 255, 255);
     display: flex;
-    text-align: auto;
+    justify-content: center;
+    /* Center text horizontally */
+    align-items: center;
+    /* Center text vertically */
     margin: auto;
     padding: 5px 3em;
     border: thick outset var(--pink-color);
     border-radius: 15px;
+    text-align: center;
 }
 
 article {
@@ -111,6 +117,7 @@ h2 {
     font-weight: bold;
     font-variant: small-caps;
     font-style: italic;
+    margin: 1em;
 }
 
 .second-text {
@@ -148,7 +155,6 @@ a:focus {
     font-variant: small-caps;
 }
 
-
 #hint {
     text-align: center;
 }
@@ -158,19 +164,25 @@ a:focus {
     color: rgb(31, 251, 82);
 }
 
-
-ul.gold {
-    list-style-image: url("images/gold.png");
-}
-
 #interested {
     text-align: center;
+    margin: 1em;
 }
 
 h3,
 #hint,
 footer {
-    color: var(--white-color)
+    color: var(--white-color);
+    margin: 1em;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin: 1em;
+    font-size: 16px !important;
 }
 
 /* Media queries */

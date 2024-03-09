@@ -58,11 +58,12 @@ body ul {
 }
 
 main {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 300;
-    line-height: 1.4em;
-    width: 90%;
-    padding: 15px 2%;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 br {
@@ -72,14 +73,14 @@ br {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 1fr 1fr 60px;
+    grid-template-rows: repeat(4, 100px);
     grid-gap: 16px;
     padding: 1em;
     grid-template-areas:
-    "head head head"
-    "sec1 sec2 sec3"
-    "sec4 sec5 sec6"
-    "sec7 sec8 sec9";
+        "head head head"
+        "sec1 sec2 sec3"
+        "sec4 sec5 sec6"
+        "sec7 sec8 sec9";
 }
 
 #top_title {
@@ -134,8 +135,16 @@ main {
     color: var(--white-color);
 }
 
-#quote1, #quote2, #quote3, #quote4, #quote5, #quote6, #quote7, #quote8, #quote9  {
-    border: 2px solid rgba(254, 253, 253, 0.877);
-    padding: 15px;
+#quote1,
+#quote2,
+#quote3,
+#quote4,
+#quote5,
+#quote6,
+#quote7,
+#quote8,
+#quote9 {
+    border: 1px solid rgb(255, 247, 247);
+    padding: 10px;
     text-align: center;
-  }
+}
