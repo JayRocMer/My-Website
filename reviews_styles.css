@@ -3,6 +3,8 @@
     --pink-color: rgb(233, 53, 233);
 }
 
+/* Nav Section */
+
 #nav_menu {
     padding-bottom: 0.5em;
     margin: auto;
@@ -31,10 +33,17 @@
     color: var(--white-color);
 }
 
-br {
-    clear: both;
+a:link,
+*[href] {
+    color: var(--pink-color);
 }
 
+a:hover,
+a:focus {
+    color: rgb(249, 248, 248);
+}
+
+/* body */
 body {
     background-color: rgb(0, 0, 0);
     background: rgb(0, 0, 0) url("images/mc_background.jpg");
@@ -56,18 +65,8 @@ main {
     padding: 15px 2%;
 }
 
-h1 {
-    color: var(--white-color);
-}
-
-a:link,
-*[href] {
-    color: var(--pink-color);
-}
-
-a:hover,
-a:focus {
-    color: rgb(249, 248, 248);
+br {
+    clear: both;
 }
 
 main {
@@ -79,46 +78,64 @@ main {
     grid-template-areas:
     "head head head"
     "sec1 sec2 sec3"
-    "sec1 sec2 sec3"
-    "foot foot foot";
+    "sec4 sec5 sec6"
+    "sec7 sec8 sec9";
 }
 
-#header {
+#top_title {
     grid-area: head;
+    color: #00ffff;
     text-align: center;
+    font-size: 50px;
 }
 
-#welcome {
+#quote1 {
     grid-area: sec1;
     color: var(--white-color);
 }
 
-#shelter {
+#quote2 {
     grid-area: sec2;
     color: var(--pink-color);
 }
 
-#venture {
+#quote3 {
     grid-area: sec3;
     color: var(--white-color);
 }
 
-#footer {
-    grid-area: foot;
+#quote4 {
+    grid-area: sec4;
+    color: var(--pink-color);
+}
+
+#quote5 {
+    grid-area: sec5;
+    color: var(--white-color);
+}
+
+#quote6 {
+    grid-area: sec6;
+    color: var(--pink-color);
+}
+
+#quote7 {
+    grid-area: sec7;
+    color: var(--white-color);
+}
+
+#quote8 {
+    grid-area: sec8;
+    color: var(--pink-color);
+}
+
+#quote9 {
+    grid-area: sec9;
+    color: var(--white-color);
+}
+
+#quote1, #quote2, #quote3, #quote4, #quote5, #quote6, #quote7, #quote8, #quote9  {
+    border: 2px solid rgba(254, 253, 253, 0.877);
+    padding: 15px;
     text-align: center;
-}
-
-/* Media queries */
-@media only screen and (max-width: 630px) {
-
-    #nav_menu ul {
-        flex-direction: column;
-    }
-
-    #grid {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        min-width: 480px;
-    }
-}
+  }

@@ -6,26 +6,24 @@
 /* body */
 body {
     background-color: rgb(0, 0, 0);
-    background: rgb(0, 0, 0) url("images/dark_image.jpg");
-    background-attachment: scroll;
+    background: rgb(0, 0, 0) url("images/mc_background.jpg");
     background-size: cover;
     width: 100%;
     max-width: 1535px;
 }
 
 body ul {
-    color: rgb(233, 53, 233);
+    color: var(--pink-color);
     font-size: medium;
 }
 
-.cabin {
-    font-family: "Cabin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 20;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+main {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    line-height: 1.4em;
+    width: 90%;
+    padding: 15px 2%;
+}
 
 #titles {
     font-size: 150%;
@@ -36,6 +34,8 @@ body ul {
 #nav_menu {
     padding-bottom: 0.5em;
     margin: auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 #nav_menu ul {
@@ -60,7 +60,7 @@ body ul {
 }
 
 #paragraph {
-    color: rgb(233, 53, 233);
+    color: #00ffff;
     font-size: medium;
     line-height: 2em;
     width: 95%;
@@ -78,12 +78,20 @@ a:focus {
     color: rgb(249, 248, 248);
 }
 
+br {
+    clear: both;
+}
+
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:larger;
+    font-size: larger;
     color: var(--white-color);
     text-align: center;
     margin-bottom: 2em;
+}
+
+footer {
+    margin-top: 2em;
 }
 
 /* Media queries */

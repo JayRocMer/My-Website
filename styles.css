@@ -7,8 +7,7 @@
 
 body {
     background-color: rgb(0, 0, 0);
-    background: rgb(0, 0, 0) url("images/dark_image.jpg");
-    background-attachment: scroll;
+    background: rgb(0, 0, 0) url("images/mc_background.jpg");
     background-size: cover;
     width: 100%;
     max-width: 1535px;
@@ -40,6 +39,8 @@ img {
 #nav_menu {
     padding-bottom: 0.5em;
     margin: auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 #nav_menu ul {
@@ -62,15 +63,6 @@ img {
 #nav_menu ul li a:hover {
     color: var(--white-color);
 }
-
-.cabin {
-    font-family: "Cabin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 20;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
 
 /* Within the article */
 
@@ -166,21 +158,9 @@ a:focus {
     color: rgb(31, 251, 82);
 }
 
-/* Body box icons */
-ul.diamonds {
-    list-style-image: url("images/diamonds.png");
-}
-
-ul.lantern {
-    list-style-image: url("images/lantern.png");
-}
 
 ul.gold {
     list-style-image: url("images/gold.png");
-}
-
-ul.pickaxe {
-    list-style-image: url("images/pickaxe.png");
 }
 
 #interested {
