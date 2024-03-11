@@ -83,6 +83,7 @@ main {
         "sec1 sec2 sec3"
         "sec1 sec2 sec3"
         "foot foot foot";
+        justify-items: space-between;
 }
 
 #header {

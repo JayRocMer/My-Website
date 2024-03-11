@@ -135,6 +135,10 @@ main {
     color: var(--white-color);
 }
 
+.author-name {
+    color: #00ffff;
+}
+
 #quote1,
 #quote2,
 #quote3,
