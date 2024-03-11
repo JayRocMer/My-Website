@@ -1,6 +1,7 @@
 :root {
     --white-color: rgb(249, 248, 248);
     --pink-color: rgb(233, 53, 233);
+    --blue-color: rgb(0, 255, 255); 
 }
 
 /* body */
@@ -9,7 +10,8 @@ body {
     background: rgb(0, 0, 0) url("images/mc_background.jpg");
     background-size: cover;
     width: 100%;
-    max-width: 1535px;
+    max-width: 1515px;
+    margin: 2%;
 }
 
 body ul {
@@ -24,7 +26,6 @@ main {
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-    margin: 1em;
 }
 
 #titles {
@@ -72,8 +73,8 @@ a:focus {
     color: rgb(249, 248, 248);
 }
 
-br {
-    clear: both;
+#jasmin {
+    color: var(--blue-color);
 }
 
 h1 {
@@ -86,14 +87,12 @@ h1 {
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    color: #00ffff;
+    color: var(--blue-color);
     line-height: 2em;
 }
 
@@ -104,6 +103,8 @@ header {
 
 .container {
     display: flex;
+    padding: 2%;
+    margin: 2%;
 }
 
 .column {
@@ -115,10 +116,8 @@ header {
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 10px;
-    height: 600px;
-    /* Set a fixed height for each row */
-    overflow: hidden;
-    /* Hide overflow content */
+    height: 700px;
+    overflow: auto;
 }
 
 footer {
@@ -137,7 +136,7 @@ footer {
 
 #q3,
 #q5 {
-    color: #00ffff;
+    color: var(--blue-color);
 }
 
 #q1,
@@ -154,7 +153,7 @@ footer {
 
 /* Media queries */
 @media only screen and (max-width: 630px) {
-    article {
+    container {
         column-width: 480px;
     }
 
@@ -164,5 +163,9 @@ footer {
 
     #titles {
         flex-direction: column;
+    }
+
+    .row {
+        overflow: auto;
     }
 }

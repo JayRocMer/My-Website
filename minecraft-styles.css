@@ -1,6 +1,7 @@
 :root {
     --white-color: rgb(249, 248, 248);
     --pink-color: rgb(233, 53, 233);
+    --blue-color: rgb(0, 255, 255); 
 }
 
 #nav_menu {
@@ -41,6 +42,7 @@ body {
     background-size: cover;
     width: 100%;
     max-width: 1535px;
+    margin: 2%
 }
 
 body ul {
@@ -62,6 +64,10 @@ h1 {
     color: var(--white-color);
 }
 
+.gamepad-icon {
+    color: var(--blue-color);
+}
+
 a:link,
 *[href] {
     color: var(--pink-color);
@@ -70,6 +76,10 @@ a:link,
 a:hover,
 a:focus {
     color: rgb(249, 248, 248);
+}
+
+#jasmin {
+    color: var(--blue-color);
 }
 
 main {

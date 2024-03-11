@@ -1,6 +1,7 @@
 :root {
     --white-color: rgb(249, 248, 248);
     --pink-color: rgb(233, 53, 233);
+    --blue-color: rgb(0, 255, 255); 
 }
 
 /* Nav Section */
@@ -50,6 +51,7 @@ body {
     background-size: cover;
     width: 100%;
     max-width: 1535px;
+    margin: 2%
 }
 
 body ul {
@@ -64,10 +66,6 @@ main {
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-}
-
-br {
-    clear: both;
 }
 
 main {
@@ -85,7 +83,7 @@ main {
 
 #top_title {
     grid-area: head;
-    color: #00ffff;
+    color: var(--blue-color);
     text-align: center;
     font-size: 50px;
 }
@@ -136,8 +134,13 @@ main {
 }
 
 .author-name {
-    color: #00ffff;
+    color: var(--blue-color);
 }
+
+#jasmin {
+    color: var(--blue-color);
+}
+
 
 #quote1,
 #quote2,
@@ -148,7 +151,7 @@ main {
 #quote7,
 #quote8,
 #quote9 {
-    border: 1px solid rgb(255, 247, 247);
+    border: 6px double rgb(255, 247, 247);
     padding: 10px;
     text-align: center;
 }

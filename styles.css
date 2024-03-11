@@ -1,6 +1,7 @@
 :root {
     --white-color: rgb(249, 248, 248);
     --pink-color: rgb(233, 53, 233);
+    --blue-color: rgb(0, 255, 255); 
 }
 
 /* Main */
@@ -104,9 +105,7 @@ br {
     color: rgb(240, 255, 255);
     display: flex;
     justify-content: center;
-    /* Center text horizontally */
     align-items: center;
-    /* Center text vertically */
     margin: auto;
     margin-right: 1em;
     padding: 5px 3em;
@@ -122,7 +121,7 @@ article {
 }
 
 h2 {
-    color: #00ffff;
+    color: var(--blue-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-variant: small-caps;
@@ -131,7 +130,7 @@ h2 {
 }
 
 .second-text {
-    color: #1bb7e2;
+    color: var(--blue-color);
     text-align: center;
 }
 
@@ -185,6 +184,10 @@ h3,
 footer {
     color: var(--white-color);
     margin: 1em;
+}
+
+#jasmin {
+    color: var(--blue-color);
 }
 
 figure {
