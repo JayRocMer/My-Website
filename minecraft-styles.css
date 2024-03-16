@@ -1,63 +1,6 @@
-:root {
-    --white-color: rgb(249, 248, 248);
-    --pink-color: rgb(233, 53, 233);
-    --blue-color: rgb(0, 255, 255); 
-}
-
-#nav_menu {
-    padding-bottom: 0.5em;
-    margin: auto;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-
-#nav_menu ul {
-    list-style-type: none;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    padding: 1em 0;
-    text-align: center;
-    border-top: 2px solid rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
-}
-
-#nav_menu ul li {
-    display: inline;
-    padding: 0 1.5em;
-    flex-basis: 33%;
-}
-
-#nav_menu ul li a:hover {
-    color: var(--white-color);
-}
 
 br {
     clear: both;
-}
-
-body {
-    background-color: rgb(0, 0, 0);
-    background: rgb(0, 0, 0) url("images/mc_background.jpg");
-    background-size: cover;
-    width: 100%;
-    max-width: 1535px;
-    margin: 2%
-}
-
-body ul {
-    color: var(--pink-color);
-    font-size: medium;
-}
-
-main {
-    font-family: "Cabin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    line-height: 3em;
 }
 
 h1 {
@@ -68,58 +11,60 @@ h1 {
     color: var(--blue-color);
 }
 
-a:link,
-*[href] {
-    color: var(--pink-color);
+#head {
+    grid-area: head;
+    text-align: center;
 }
 
-a:hover,
-a:focus {
-    color: rgb(249, 248, 248);
+#image3 {
+    grid-area: img1;
+    width: 220px;
+    height: 200px;
 }
 
-#jasmin {
+#image4 {
+    grid-area: img2;
+    width: 220px; 
+    height: 200px; 
+}
+
+#image5 {
+    grid-area: img3;
+    width: 200px;
+    height: 200px; 
+}
+
+#welcome {
+    grid-area: sec1;
     color: var(--blue-color);
+    line-height: 2em;
+}
+
+#shelter {
+    grid-area: sec2;
+    color: var(--white-color);
+    line-height: 2em;
+}
+
+#venture {
+    grid-area: sec3;
+    color: rgb(233, 53, 233);
+    line-height: 2em;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 1fr 1fr 60px;
+    grid-template-rows: auto;
     grid-gap: 16px;
     padding: 1em;
     grid-template-areas:
         "head head head"
-        "sec1 sec2 sec3"
-        "sec1 sec2 sec3"
-        "foot foot foot";
-        justify-items: space-between;
+        "img1 img2 img3" 
+        "sec1 sec2 sec3"; 
+    justify-items: center;
 }
 
-#header {
-    grid-area: head;
-    text-align: center;
-}
-
-#welcome {
-    grid-area: sec1;
-    color: var(--white-color);
-}
-
-#shelter {
-    grid-area: sec2;
-    color: var(--pink-color);
-}
-
-#venture {
-    grid-area: sec3;
-    color: var(--white-color);
-}
-
-#footer {
-    grid-area: foot;
-    text-align: center;
-}
 
 /* Media queries */
 @media only screen and (max-width: 630px) {
